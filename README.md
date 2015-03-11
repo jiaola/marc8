@@ -38,7 +38,7 @@ the options parameter is optional. If used, the following options can be set.
 ### Example
 
 ```javascript
-var marc8 = require('./lib/marc8');
+var marc8 = require('marc8');
 
 var marc8Str = "Conversa\xF0c\xE4ao \xC1";
 var unicodeStr = "Conversação \u2113";
