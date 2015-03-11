@@ -29,3 +29,17 @@ marc8(marc8_string, options);
     Replacement Char, but can set option replace to something else include empty string.
 * replace: used with the option invalid. For example:
     `marc8(bad_marc8, {invalid: "replace", replace: "")`
+
+
+### Example
+
+```javascript
+var marc8 = require('./lib/marc8');
+
+var marc8Str = "Conversa\xF0c\xE4ao \xC1";
+var unicodeStr = "Conversação \u2113";
+
+var converted = marc8(marc8Str);
+
+console.log(converted === unicodeStr); // will print true
+```
