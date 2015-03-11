@@ -17,6 +17,7 @@ var options = {
     replace: '',
     expandNCR: false
 };
+
 marc8(marc8_string, options);
 ```
 
