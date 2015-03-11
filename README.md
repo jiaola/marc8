@@ -20,14 +20,16 @@ marc8(marc8_string, options);
 
 ### Options
 
-* normalization: by default return NFC normalized, but set :normalization option to:
+the options parameter is optional. If used, the following options can be set. 
+
+* `normalization`: by default return NFC normalized, but set :normalization option to:
     "NFC", "NFD", "NFKC", "NFKD", or false. Set to false for higher performance.
-* expandNCR: By default, escaped unicode 'named character references' in Marc8 will
+* `expandNCR`: By default, escaped unicode 'named character references' in Marc8 will
     be translated to actuall UTF8. Eg. "&#x200F;". But pass expandNCR: false to disable.
-* invalid: Bad Marc8 bytes? By default will throw an error message. Set option invalid: "replace"
+* `invalid`: Bad Marc8 bytes? By default will throw an error message. Set option invalid: "replace"
     to instead silently replace bad bytes with a replacement char -- by default Unicode
     Replacement Char, but can set option replace to something else include empty string.
-* replace: used with the option invalid. For example:
+* `replace`: used with the option invalid. For example:
     `marc8(bad_marc8, {invalid: "replace", replace: "")`
 
 
