@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jiaola/marc8.svg?branch=0.0.1)](https://travis-ci.org/jiaola/marc8)
+
 A Node.js module to convert MARC8 encoded string to UTF-8.
 
 ## Installation
@@ -20,7 +22,7 @@ marc8(marc8_string, options);
 
 ### Options
 
-the options parameter is optional. If used, the following options can be set. 
+the options parameter is optional. If used, the following options can be set.
 
 * `normalization`: by default return NFC normalized, but set :normalization option to:
     "NFC", "NFD", "NFKC", "NFKD", or false. Set to false for higher performance.
