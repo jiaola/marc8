@@ -1,6 +1,6 @@
 {
   "name": "marc8",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Node.js module for converting MARC8 encoding to Unicode",
   "main": "index.js",
   "scripts": {
